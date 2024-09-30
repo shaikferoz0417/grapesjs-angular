@@ -5,17 +5,17 @@ import grapesjs from 'grapesjs';
   standalone: true,
   imports: [],
   templateUrl: './card-designer.component.html',
-  styleUrl: './card-designer.component.css',
+  styleUrl: './card-designer.component.css'
 })
 export class CardDesignerComponent implements OnInit {
   private _editor: any;
-
   constructor() {}
   get editor() {
     return this._editor;
   }
 
   ngOnInit() {
+    
     this._editor = this.initializeEditor();
 
     this._editor.Panels.addPanel({
